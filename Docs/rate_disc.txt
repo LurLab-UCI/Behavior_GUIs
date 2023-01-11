@@ -1,0 +1,31 @@
+
+Here's a description of the modifications we discussed earlier today.
+
+1) Add box for max ratio. This ratio will pertain to the 2-rate mode, 
+deciding the ratio of the high and low blink ratios. 
+For example: if high freq. is 12Hz, land ow is 1Hz (defined in the appropriate GUI parts).
+ These numbers act as the max and min boundaries. When we have a max ratio of e.g.: 4:1,
+ this will mean that the possible frequency combinations are: 4Hz - 1Hz; 8Hz - 2Hz, 12Hz - 3Hz. 
+The possible combinations should be rounded to integer, since we can't do 1.25 blinks. 
+For each trial in 2 Rates Only mode one of these combinations would be randomly chosen and displayed 
+on the sides (doesn't need to use up each, just pick one randomly in each trial). 
+correct side assignment per trial is same as before.
+
+2) Add box for Mixed Rates Steps. 
+This will determine how many levels of difficulty is available when Mixed Rates is selected 
+(this is similar to 6-panel testing mode). 
+For example, if max ratio (given in the box detailed above) is 4:1 and the number of steps given in this box is 4, 
+the difficulty levels will be (left : right): 4:1, 3:1, 2:1, 1.2:1, 1:1.2, 1:2, 1:3, 1:4 
+(giving us a total of 8 presentations with left and right correct) . 
+Out of this 8 the two "training" ratios, 4:1 (left correct) and 1:4 (right correct), 
+will be presented in trials determined by the % training trials in the Timer and Delay controls. 
+The in-between ratios (6 remaining ratios) will have to be randomly distributed between trials 
+drawn without replacement and hen exhausted start again (similar to 6-panel mode). 
+What ratios can be used will depend on the maximum ratio and number of steps given in the table 
+in the attached excel spreadsheet. 
+The ratios will generate combinations of actual high and low blink frequencies to be displayed 
+(the same ratio can give multiple freq. combinations), one these are freq. 
+Combinations to be displayed (can be random). 
+
+I hope this makes sense. I have attached the spreadsheet with the ratio combinations.
+
